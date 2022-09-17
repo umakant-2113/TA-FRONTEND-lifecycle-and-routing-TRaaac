@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Anchor Decoration */
+a {
+  text-decoration: none;
+}
+
+/* Image Adjust */
+.full-width {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Positions */
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-50 {
+  z-index: 50;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.35rem 1rem;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: purple;
+  border: 1px solid purple;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: purple;
+  border: 1px solid purple;
+}
+
+.section {
+  background-color: cornflowerblue;
+  height: 99.5vh;
+  margin: 0 1rem;
+}
+
+.div1 {
+  height: 49.7vh;
+  background-color: rgb(18, 18, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.div2 {
+  height: 49.7vh;
+  background-color: rgb(229, 246, 225);
+}
+
+.image-box {
+  color: white;
+  height: 160px;
+  width: 60%;
+  position: absolute;
+  background-color: rgb(228, 229, 255);
+  top: 5rem;
+}
+
+.image-box2 {
+  height: 300px;
+  position: absolute;
+  width: 60%;
+  top: 15rem;
+  background-color: rgb(255, 253, 255);
+}
+
+.figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5.8rem;
+  z-index: 100;
+}
+
+.figure img {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0.2rem;
+}
+
+.heading {
+  z-index: 999;
+  color: black;
+  margin: 4.5rem 0 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.heading2 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(60, 56, 56);
+}
+
+.icon-div {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.icon-div i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn-4 {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+button {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  -webkit-animation: spinner 1.5s linear infinite;
+          animation: spinner 1.5s linear infinite;
+  z-index: 999;
+}/*# sourceMappingURL=style.css.map */
